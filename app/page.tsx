@@ -1,4 +1,23 @@
-export default function Home() {
+import { createClient } from '../utils/supabase/server'
+
+
+
+export default async function Home() {
+
+
+  const supabase = await createClient() // <--- IMPORTANTE: await aquí
+
+  const { data, error } = await supabase.from('coperativa_referentes').select('*')
+
+  if (error) {
+    console.error("Error de Supabase:", error)
+  }
+
+  console.log(data)
+
+
+
+
   return (
     <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
       <div className="relative flex min-h-screen flex-col">
