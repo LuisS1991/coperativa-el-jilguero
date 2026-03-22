@@ -1,213 +1,227 @@
 export default function Sorteos() {
     return (
-        <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
-            <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
-                {/*    <!-- Navigation --> */}
-                <header className="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 backdrop-blur-md dark:bg-background-dark/80">
-                    <div className="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4">
-                        <div className="flex items-center gap-3">
-                            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white">
-                                <span className="material-symbols-outlined">confirmation_number</span>
-                            </div>
-                            <h2 className="text-xl font-bold tracking-tight">Covi El Jilguero</h2>
-                        </div>
-                        <nav className="hidden md:flex items-center gap-8">
-                            <a className="text-sm font-semibold hover:text-primary transition-colors" href="#">Inicio</a>
-                            <a className="text-sm font-semibold text-primary" href="#">Sorteos</a>
-                            <a className="text-sm font-semibold hover:text-primary transition-colors" href="#">Ganadores</a>
-                            <a className="text-sm font-semibold hover:text-primary transition-colors" href="#">Reglas</a>
-                        </nav>
-                        <div className="flex items-center gap-3">
-                            <button className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
-                                <span className="material-symbols-outlined">search</span>
-                            </button>
-                            <button className="flex h-10 items-center gap-2 rounded-xl bg-primary px-5 text-sm font-bold text-white shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all">
-                                <span className="material-symbols-outlined text-[20px]">account_circle</span>
-                                <span>Mi Cuenta</span>
-                            </button>
+        <main className="pt-20">
+            {/*  <!-- Hero Section: Editorial Organicism --> */}
+            <section className="relative min-h-[921px] flex flex-col items-center justify-center px-8 overflow-hidden bg-surface-container-low">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 py-20">
+                    <div className="lg:col-span-6 space-y-8">
+                        <span className="inline-block px-4 py-1 bg-tertiary-fixed text-on-tertiary-fixed rounded-full text-sm font-bold tracking-widest uppercase">Tradición Cooperativa</span>
+                        <h1 className="serif-display text-6xl md:text-8xl font-black text-primary leading-[1.1] tracking-tighter">
+                            Gran Sorteo <br /><span className="text-tertiary italic">Anual.</span>
+                        </h1>
+                        <p className="text-xl text-on-surface-variant max-w-lg leading-relaxed">
+                            Construimos comunidad, un número a la vez. Participa en nuestra rifa solidaria y ayuda a consolidar el sueño de la vivienda cooperativa mientras ganas premios increíbles.
+                        </p>
+                        <div className="flex flex-wrap gap-4 pt-4">
+                            <a className="bg-primary text-on-primary px-8 py-4 rounded-xl text-lg font-bold shadow-lg hover:bg-primary-container transition-all" href="#reservar">Reservar mi Número</a>
+                            <a className="flex items-center gap-2 text-primary font-bold px-8 py-4 border-b-2 border-tertiary-fixed hover:bg-surface-container transition-all" href="#premios">Ver Premios <span className="material-symbols-outlined">arrow_downward</span></a>
                         </div>
                     </div>
-                </header>
-                <main className="mx-auto w-full max-w-[1200px] flex-1 px-6 py-8">
-                    {/*  <!-- Hero Section: Gran Sorteo Anual --> */}
-                    <section className="mb-12">
-                        <div className="relative overflow-hidden rounded-3xl bg-slate-900 shadow-2xl">
-                            <div className="absolute inset-0 opacity-60">
-                                <img className="h-full w-full object-cover" data-alt="Luxury modern car driving on a coastal road at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJvXbzlsz8P86QjEg3OLkksZdZWZrgddmlZIptUfgwHpwhxFePbXrMInXXVVd1Bvcsh-pv27J16NzGDakbG9R6r7R-oR73mxf7xQoKjZj25D4Rema4RfaD9mLx12v648dOsur6XSPyQmJxcVIvxQqBcAcoiboEf8h3JfHEK_IwcPXyAMa0RyAaA4p2CrHPQk0aZpeh98XhyMhKgErg_f7X0mvw46hM2eRR6bfrrUAsbtd9k8idjTf-lTTKhqPLh6MvAXfYVDcltjHQ" />
+                    <div className="lg:col-span-6 relative flex flex-col gap-4">
+                        {/*  <!-- Prize Showcase: Bento-style overlap --> */}
+                        <div className="grid grid-cols-2 gap-4">
+                            <div className="col-span-2 relative aspect-video bg-surface-container rounded-full overflow-hidden group">
+                                <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Modern white luxury car for first prize" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC446X2t85vZQjj5_hCq8thIC5BNjjZ-746IKj6DCKCK3znQOBCVLA8iYBBh79H3SBzRco-UQ--VcXMA8UrneEU2U80WbHMxkAKTikiBQQ8jny2P0YYkcF5ldy9B70TgYnH5wqRe5IbiESLhcfLiecX37TzxifLsymq0sN2AM6Cc-HccKIrHlNfFmx3HXCWDqoSJ_yelokoSPqsAPmfc4ieKh69efrM4Ev9HdwQMyj_ALh15BpoV65r4JcdOcaIJ-dpeOS9YX1_TqM" />
+                                <div className="absolute bottom-6 left-6 bg-primary text-on-primary px-4 py-2 rounded-lg font-bold">1º PREMIO: Automóvil 0km</div>
                             </div>
-                            <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent"></div>
-                            <div className="relative flex flex-col justify-end p-8 md:p-16 min-h-[500px]">
-                                <div className="max-w-2xl">
-                                    <span className="mb-4 inline-block rounded-full bg-primary px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-white shadow-lg shadow-primary/30">
-                                        Evento Principal 2024
-                                    </span>
-                                    <h1 className="mb-4 text-5xl font-black leading-tight text-white md:text-7xl">
-                                        Gran Sorteo Anual
-                                    </h1>
-                                    <p className="mb-8 text-lg text-slate-200 md:text-xl">
-                                        ¡Participa y gana increíbles premios! No pierdas la oportunidad de cambiar tu vida. El sorteo se realizará en vivo ante escribano público.
-                                    </p>
-                                    <div className="flex flex-wrap gap-4">
-                                        <button className="flex h-14 items-center justify-center gap-3 rounded-2xl bg-primary px-8 text-lg font-black text-white shadow-xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
-                                            <span className="material-symbols-outlined">shopping_cart</span>
-                                            COMPRAR TICKETS
-                                        </button>
-                                        <div className="flex flex-col justify-center rounded-2xl bg-white/10 px-6 py-2 backdrop-blur-md border border-white/20">
-                                            <span className="text-[10px] uppercase tracking-wider text-slate-300">Fecha del Sorteo</span>
-                                            <span className="text-xl font-bold text-white">15 de Diciembre</span>
-                                        </div>
-                                    </div>
+                            <div className="aspect-square bg-surface-container rounded-xl overflow-hidden relative group">
+                                <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="classNameic black motorcycle second prize" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnZrZ_7e6DvUO8zmnTdqVQYL1gMlGInNstLqgFFCgUcg7K4n4mCHlZ5LTerLX35PFWyC32vzqS4lXJxtmTeYVVSvhbIZha6PhDVk2gzCT_I5fWGWiLcdzD9xkjqhsNkbN1JeSfF0JgQZjurtPz6RTax4-QMme6Frk7CpLyTeC4tk0jVHDl8nEBKoGNkNA42Q5eH0pba1GD9Tu4MQosDO_FaiUPTz0-dcPxXirZKIboJqlFAV3W6yRO_j4WRjYltzeDzErylwxowVQ" />
+                                <div className="absolute bottom-4 left-4 bg-tertiary text-on-tertiary px-3 py-1 rounded-lg text-sm font-bold">2º PREMIO: Moto 150cc</div>
+                            </div>
+                            <div className="aspect-square bg-surface-container rounded-xl overflow-hidden relative group">
+                                <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electric scooter modern city commute third prize" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmUUVGUbvFTuuQJ0u06QAyHvBu9v_FtN-42YH6Msjy8NuqqhSkcjeAdh-kId2PyaDjqikHLjrb45WTEUKKeBi5cy6vF2s_5OMvBz4AEBwMgagDiMxxBAMxGunQhGxXN8LEK2giKsFvIoFmdSPna2Gfwv0S-volHuJpx2lzFzYeG-Edyy017F5VIMv15c1Gms6B99QuiOPJs6l8Htl8oQrEHN2ntO78Hmo2cq8N2nkRT3BVW1MIteYZ7_D-dpG43WIUGUEFjjnOfEM" />
+                                <div className="absolute bottom-4 left-4 bg-secondary text-on-secondary px-3 py-1 rounded-lg text-sm font-bold">3º PREMIO: Monopatín Eléctrico</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/*     <!-- Decorative circle --> */}
+                <div className="absolute -right-20 -bottom-20 w-96 h-96 bg-tertiary-container/10 rounded-full blur-3xl"></div>
+            </section>
+            {/*    <!-- Panel de Referentes: The Community Nest Style --> */}
+            <section className="py-24 px-8 bg-surface">
+                <div className="max-w-7xl mx-auto">
+                    <div className="mb-16">
+                        <h2 className="serif-display text-4xl font-bold text-primary mb-4">Nuestros Referentes</h2>
+                        <p className="text-on-surface-variant max-w-2xl">Cada paso que damos es gracias al compromiso de nuestros socios. Contacta a tu referente de confianza para adquirir tu número.</p>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                        {/*     <!-- Referente Card 1 --> */}
+                        <div className="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-6 relative overflow-hidden group">
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-[100px] group-hover:bg-primary/10 transition-colors"></div>
+                            <div className="flex items-center gap-5">
+                                <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-primary/20">
+                                    <img className="w-full h-full object-cover" data-alt="Portrait of a friendly cooperative member" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQE8qPSmyjj1uVv0SdJFBWZCJHGPwQZqM5YlrL0eXYh4impKCC4oiSCzBpW6BGpOLqBUhxnOr_3N_yUNekGkZ_nfwkGoz2EB87TtdBGvJCUuTVKWgbm2m2ayL65RERytN5IBQIykAS0DOnZDTXvWl_OgT3_P3Mu0_gWMnzP1kl3bvXEVbKiQQKG-HX964CHWhMQwzpiizPFaA5AlwswDU_tKGkUerXmNQVeWDj4eKUd_m9UMKYcDli4s9gv131FqyVrwnDoiRQZLA" />
+                                </div>
+                                <div>
+                                    <h3 className="font-bold text-xl text-primary">Carlos Benítez</h3>
+                                    <p className="text-sm text-tertiary font-semibold uppercase tracking-wider">Sector A - Arboleda</p>
+                                </div>
+                            </div>
+                            <div className="space-y-3">
+                                <div className="flex justify-between text-sm font-bold">
+                                    <span>Progreso de Ventas</span>
+                                    <span className="text-primary">85%</span>
+                                </div>
+                                <div className="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+                                    <div className="h-full bg-primary rounded-full w-[85%]"></div>
+                                </div>
+                                <div className="flex justify-between text-xs text-on-surface-variant pt-2">
+                                    <span>Asignados: 200</span>
+                                    <span className="font-bold text-on-surface">Vendidos: 170</span>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    {/*    <!-- Featured Prizes Grid --> */}
-                    <section className="mb-16">
-                        <div className="mb-8 flex items-end justify-between">
-                            <div>
-                                <h2 className="text-3xl font-black tracking-tight">Premios Destacados</h2>
-                                <p className="text-slate-500 dark:text-slate-400">Descubre lo que podrías llevarte a casa este año</p>
-                            </div>
-                            <span className="material-symbols-outlined text-4xl text-primary/30">stars</span>
-                        </div>
-                        <div className="grid gap-8 md:grid-cols-3">
-                            {/*   <!-- 1st Prize --> */}
-                            <div className="group flex flex-col overflow-hidden rounded-2xl border border-primary/10 bg-white shadow-sm transition-all hover:shadow-xl dark:bg-slate-900">
-                                <div className="relative h-64 overflow-hidden">
-                                    <img className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern shiny white SUV car in showroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxK0C3-loKdgiA6pov5xvkFWgnXml6lwIZrAd3hxRQsqBdMzATPIULidBPkulz4QgV4LmhcGsd9VsdwVCdBwQalUo9kV7VUgwg-SYVS4XJaUWRH3iy5iJJqU0_G0ajlb-FJsamS__IF66Bla2tntW1K-qEEHz44UXdAfkEZVkW5DPkc6o0rT0PprL2puLCnQqHiWYOrs2iJmGwCZxThl0DZ0V7WpG35c8YBp6XNk2BYI3utFMkufG7cT0xvMbaMDBuGkuEhIqNLE6C" />
-                                    <div className="absolute left-4 top-4 rounded-lg bg-primary px-3 py-1 text-sm font-bold text-white">
-                                        1° PREMIO
-                                    </div>
+                        {/*   <!-- Referente Card 2 --> */}
+                        <div className="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-6 relative overflow-hidden group">
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-secondary-container/10 rounded-bl-[100px] group-hover:bg-secondary-container/20 transition-colors"></div>
+                            <div className="flex items-center gap-5">
+                                <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-primary/20">
+                                    <img className="w-full h-full object-cover" data-alt="Portrait of a female cooperative leader" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfTHHqyf-1dfeKos0id6HIh3HcHEcHguKcjSlSOh9slTHxzd8Fw6DnzXToiRGdAJ6lBJcJ0PyJFh8z-Qrj4LOtnoUMHPoNemiyES4evx8g2NuZVhjT0RaQRCZ0iMs7FdwlI3ZIgS6NOOYFVRQjN5GekXWn9VKQu3bhpnsuM1U-BzFcjWlK5S4CsU7jUrxra2ouVR1aaYnRdvm-TwGPiuovxvJ8fa3tLAfkTPho9x5SrOFzxO_Koa7X5fzCEyacmtHcZYsPjdNQI-o" />
                                 </div>
-                                <div className="flex flex-1 flex-col p-6">
-                                    <h3 className="mb-2 text-2xl font-bold">Auto 0km</h3>
-                                    <p className="mb-6 flex-1 text-sm leading-relaxed text-slate-500 dark:text-slate-400">
-                                        Último modelo full equipo, transmisión automática, techo solar y la máxima seguridad para tu familia.
-                                    </p>
-                                    <div className="flex items-center justify-between border-t border-slate-100 pt-4 dark:border-slate-800">
-                                        <span className="text-sm font-medium text-slate-400 uppercase tracking-tighter">Valor Est. $25k+</span>
-                                        <span className="material-symbols-outlined text-primary">directions_car</span>
-                                    </div>
+                                <div>
+                                    <h3 className="font-bold text-xl text-primary">Mariana Solís</h3>
+                                    <p className="text-sm text-tertiary font-semibold uppercase tracking-wider">Sector B - Las Alas</p>
                                 </div>
                             </div>
-                            {/* <!-- 2nd Prize --> */}
-                            <div className="group flex flex-col overflow-hidden rounded-2xl border border-primary/10 bg-white shadow-sm transition-all hover:shadow-xl dark:bg-slate-900">
-                                <div className="relative h-64 overflow-hidden">
-                                    <img className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Black sleek sports motorcycle parked on urban street" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp8UOv82d6DNl2FLhw_LSwAtK2ustDGLeWlblnJ96zyDOa0PE-x2sbkgaDGUVbmnLYyUpgr2ZedMj2ddt4AGfvmZkiyoE3XaUCAxSOMzpbgQW4Ql-ryEa3J71HdlBb6MO67VgbstYtyWlXEN3CljxGK-BimIYw8SMU22FPT6eQ9R7A7JkIfWpDzR82WM4jljrL4bG27f10EDXZyvOygvuMk8dzKt1nJUMfw84dkOU4SJp8Yny6kud7f8CrK_ipCvTOrTvs3f9x9gVj" />
-                                    <div className="absolute left-4 top-4 rounded-lg bg-slate-800 px-3 py-1 text-sm font-bold text-white">
-                                        2° PREMIO
-                                    </div>
+                            <div className="space-y-3">
+                                <div className="flex justify-between text-sm font-bold">
+                                    <span>Progreso de Ventas</span>
+                                    <span className="text-primary">42%</span>
                                 </div>
-                                <div className="flex flex-1 flex-col p-6">
-                                    <h3 className="mb-2 text-2xl font-bold">Moto Deportiva</h3>
-                                    <p className="mb-6 flex-1 text-sm leading-relaxed text-slate-500 dark:text-slate-400">
-                                        Potencia y agilidad en dos ruedas. Ideal para la ciudad y escapadas de fin de semana.
-                                    </p>
-                                    <div className="flex items-center justify-between border-t border-slate-100 pt-4 dark:border-slate-800">
-                                        <span className="text-sm font-medium text-slate-400 uppercase tracking-tighter">Valor Est. $5k+</span>
-                                        <span className="material-symbols-outlined text-primary">two_wheeler</span>
-                                    </div>
+                                <div className="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+                                    <div className="h-full bg-primary rounded-full w-[42%]"></div>
                                 </div>
-                            </div>
-                            {/* <!-- 3rd Prize --> */}
-                            <div className="group flex flex-col overflow-hidden rounded-2xl border border-primary/10 bg-white shadow-sm transition-all hover:shadow-xl dark:bg-slate-900">
-                                <div className="relative h-64 overflow-hidden">
-                                    <img className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern electric scooter on a sidewalk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjyp2H2VyRwls0QGN95V1b8hJGHcSQz3pBvQba4y8gvWCJKDBnNJWZTVrfg_y270_cAcBi3WhvKHUi4ByJMih16wMxH-4UJdqYSJaK5jZekRWIm3X6N_wXkVYuI6tpPCdZkTL4QgmW08b3sPI5Fq_yxaWEO7rrJEq61iEnXZc7BvwR3UJjFNcU6-gYcFn9fW4QsfNAaMbmijQjeLCbPdsxFxoY3ko-fADKfU315WyxUXMwTGwEpwODIR2dmbp36UOV773uRsjr6Lnv" />
-                                    <div className="absolute left-4 top-4 rounded-lg bg-slate-800 px-3 py-1 text-sm font-bold text-white">
-                                        3° PREMIO
-                                    </div>
-                                </div>
-                                <div className="flex flex-1 flex-col p-6">
-                                    <h3 className="mb-2 text-2xl font-bold">Monopatín Eléctrico</h3>
-                                    <p className="mb-6 flex-1 text-sm leading-relaxed text-slate-500 dark:text-slate-400">
-                                        Movilidad sustentable con autonomía extendida y diseño plegable de alta gama.
-                                    </p>
-                                    <div className="flex items-center justify-between border-t border-slate-100 pt-4 dark:border-slate-800">
-                                        <span className="text-sm font-medium text-slate-400 uppercase tracking-tighter">Valor Est. $800+</span>
-                                        <span className="material-symbols-outlined text-primary">electric_scooter</span>
-                                    </div>
+                                <div className="flex justify-between text-xs text-on-surface-variant pt-2">
+                                    <span>Asignados: 150</span>
+                                    <span className="font-bold text-on-surface">Vendidos: 63</span>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    {/*      <!-- Rules & Info Section --> */}
-                    <section className="grid gap-8 lg:grid-cols-2">
-                        <div className="rounded-3xl bg-primary/5 p-8 dark:bg-primary/10">
-                            <div className="mb-6 flex items-center gap-3">
-                                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-white">
-                                    <span className="material-symbols-outlined">gavel</span>
+                        {/*  <!-- Referente Card 3 --> */}
+                        <div className="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-6 relative overflow-hidden group">
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-tertiary-container/5 rounded-bl-[100px] group-hover:bg-tertiary-container/10 transition-colors"></div>
+                            <div className="flex items-center gap-5">
+                                <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-primary/20">
+                                    <img className="w-full h-full object-cover" data-alt="Portrait of an elderly cooperative member" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtYniP_-mLTCibUc23FOWc2gUS4rZ_m06MaLbA_FIq4jHibV7Y1vND8XJx_15R6sCjQvbIKzFaB3PGNxrpJVvz4LxSwL-mEaYe-tM9WCfK6i4sWw25wBaIHH2k4_IJm7H5wMXjQypNby6CYIsodhSnkVvOCe1Eg7KZNLVzVYa0YO25rnE5UR0hpimndyBoMEgV53p623Ckx8-fcK-gv8tDX5GDqi_Lh6YS6DmUJfletZCNGwv1qS_LuIFRF6mo-6udod3AIjv_noA" />
                                 </div>
-                                <h2 className="text-2xl font-bold">Reglas del Sorteo</h2>
+                                <div>
+                                    <h3 className="font-bold text-xl text-primary">Roberto Gómez</h3>
+                                    <p className="text-sm text-tertiary font-semibold uppercase tracking-wider">Sector C - El Jilguero</p>
+                                </div>
                             </div>
-                            <ul className="space-y-4">
-                                <li className="flex gap-4">
-                                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-[12px] font-bold text-white">1</span>
-                                    <p className="text-sm text-slate-600 dark:text-slate-400">Podrán participar todas las personas mayores de 18 años residentes en el país.</p>
-                                </li>
-                                <li className="flex gap-4">
-                                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-[12px] font-bold text-white">2</span>
-                                    <p className="text-sm text-slate-600 dark:text-slate-400">Cada ticket comprado otorga una (1) oportunidad única para todos los premios del sorteo.</p>
-                                </li>
-                                <li className="flex gap-4">
-                                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-[12px] font-bold text-white">3</span>
-                                    <p className="text-sm text-slate-600 dark:text-slate-400">El sorteo se realizará mediante bolillero electrónico certificado el día 15/12 a las 20:00hs.</p>
-                                </li>
-                                <li className="flex gap-4">
-                                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-[12px] font-bold text-white">4</span>
-                                    <p className="text-sm text-slate-600 dark:text-slate-400">Los ganadores serán notificados vía email y teléfono, y publicados en nuestro sitio web.</p>
-                                </li>
-                            </ul>
+                            <div className="space-y-3">
+                                <div className="flex justify-between text-sm font-bold">
+                                    <span>Progreso de Ventas</span>
+                                    <span className="text-primary">98%</span>
+                                </div>
+                                <div className="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+                                    <div className="h-full bg-primary rounded-full w-[98%]"></div>
+                                </div>
+                                <div className="flex justify-between text-xs text-on-surface-variant pt-2">
+                                    <span>Asignados: 250</span>
+                                    <span className="font-bold text-on-surface">Vendidos: 245</span>
+                                </div>
+                            </div>
                         </div>
-                        <div className="flex flex-col justify-center rounded-3xl bg-slate-900 p-8 text-white shadow-xl dark:bg-black/40">
-                            <h3 className="mb-2 text-lg font-bold text-primary">¿Tienes dudas?</h3>
-                            <h2 className="mb-6 text-3xl font-black">Estamos para ayudarte</h2>
-                            <div className="space-y-6">
-                                <div className="flex items-center gap-4">
-                                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10">
-                                        <span className="material-symbols-outlined text-primary">mail</span>
-                                    </div>
-                                    <div>
-                                        <p className="text-xs text-slate-400">Email de Soporte</p>
-                                        <p className="font-semibold">ayuda@covieljilguero.com</p>
-                                    </div>
+                    </div>
+                </div>
+            </section>
+            {/*  <!-- Disponibilidad de Números: Minimal Grid --> */}
+            <section className="py-24 px-8 bg-surface-container-low">
+                <div className="max-w-7xl mx-auto">
+                    <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                        <div>
+                            <h2 className="serif-display text-4xl font-bold text-primary mb-4">Números Disponibles</h2>
+                            <p className="text-on-surface-variant">Explora los números restantes. El color indica su estado actual.</p>
+                        </div>
+                        <div className="flex gap-4 text-xs font-bold uppercase tracking-widest">
+                            <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-surface-container-lowest border border-outline-variant"></span> Libre</div>
+                            <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-secondary-container"></span> Reservado</div>
+                            <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-primary opacity-30"></span> Vendido</div>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-6 sm:grid-cols-10 md:grid-cols-15 lg:grid-cols-20 gap-2">
+                        {/* <!-- Loop simulation for grid of numbers --> */}
+                        {/*    <!-- 1-20 sequence sample --> */}
+                        <div className="aspect-square flex items-center justify-center bg-primary opacity-20 text-on-primary font-bold text-xs rounded-lg cursor-not-allowed" title="Vendido">01</div>
+                        <div className="aspect-square flex items-center justify-center bg-surface-container-lowest border border-outline-variant/20 hover:border-primary hover:text-primary transition-all font-bold text-xs rounded-lg cursor-pointer">02</div>
+                        <div className="aspect-square flex items-center justify-center bg-surface-container-lowest border border-outline-variant/20 hover:border-primary hover:text-primary transition-all font-bold text-xs rounded-lg cursor-pointer">03</div>
+                        <div className="aspect-square flex items-center justify-center bg-secondary-container text-on-secondary-container font-bold text-xs rounded-lg cursor-help" title="Reservado">04</div>
+                        <div className="aspect-square flex items-center justify-center bg-surface-container-lowest border border-outline-variant/20 hover:border-primary hover:text-primary transition-all font-bold text-xs rounded-lg cursor-pointer">05</div>
+                        <div className="aspect-square flex items-center justify-center bg-surface-container-lowest border border-outline-variant/20 hover:border-primary hover:text-primary transition-all font-bold text-xs rounded-lg cursor-pointer">06</div>
+                        <div className="aspect-square flex items-center justify-center bg-primary opacity-20 text-on-primary font-bold text-xs rounded-lg cursor-not-allowed">07</div>
+                        <div className="aspect-square flex items-center justify-center bg-surface-container-lowest border border-outline-variant/20 hover:border-primary hover:text-primary transition-all font-bold text-xs rounded-lg cursor-pointer">08</div>
+                        <div className="aspect-square flex items-center justify-center bg-surface-container-lowest border border-outline-variant/20 hover:border-primary hover:text-primary transition-all font-bold text-xs rounded-lg cursor-pointer">09</div>
+                        <div className="aspect-square flex items-center justify-center bg-surface-container-lowest border border-outline-variant/20 hover:border-primary hover:text-primary transition-all font-bold text-xs rounded-lg cursor-pointer">10</div>
+                        {/*  <!-- Row 2 --> */}
+                        <div className="aspect-square flex items-center justify-center bg-surface-container-lowest border border-outline-variant/20 hover:border-primary hover:text-primary transition-all font-bold text-xs rounded-lg cursor-pointer">11</div>
+                        <div className="aspect-square flex items-center justify-center bg-secondary-container text-on-secondary-container font-bold text-xs rounded-lg cursor-help">12</div>
+                        <div className="aspect-square flex items-center justify-center bg-surface-container-lowest border border-outline-variant/20 hover:border-primary hover:text-primary transition-all font-bold text-xs rounded-lg cursor-pointer">13</div>
+                        <div className="aspect-square flex items-center justify-center bg-surface-container-lowest border border-outline-variant/20 hover:border-primary hover:text-primary transition-all font-bold text-xs rounded-lg cursor-pointer text-primary bg-primary-fixed">14</div>
+                        <div className="aspect-square flex items-center justify-center bg-surface-container-lowest border border-outline-variant/20 hover:border-primary hover:text-primary transition-all font-bold text-xs rounded-lg cursor-pointer">15</div>
+                        <div className="aspect-square flex items-center justify-center bg-primary opacity-20 text-on-primary font-bold text-xs rounded-lg cursor-not-allowed">16</div>
+                        <div className="aspect-square flex items-center justify-center bg-surface-container-lowest border border-outline-variant/20 hover:border-primary hover:text-primary transition-all font-bold text-xs rounded-lg cursor-pointer">17</div>
+                        <div className="aspect-square flex items-center justify-center bg-surface-container-lowest border border-outline-variant/20 hover:border-primary hover:text-primary transition-all font-bold text-xs rounded-lg cursor-pointer">18</div>
+                        <div className="aspect-square flex items-center justify-center bg-surface-container-lowest border border-outline-variant/20 hover:border-primary hover:text-primary transition-all font-bold text-xs rounded-lg cursor-pointer">19</div>
+                        <div className="aspect-square flex items-center justify-center bg-surface-container-lowest border border-outline-variant/20 hover:border-primary hover:text-primary transition-all font-bold text-xs rounded-lg cursor-pointer">20</div>
+                        {/* <!-- Additional generic items to fill space --> */}
+                        <div className="aspect-square flex items-center justify-center bg-surface-container-lowest border border-outline-variant/20 font-bold text-xs rounded-lg">...</div>
+                        <div className="aspect-square flex items-center justify-center bg-surface-container-lowest border border-outline-variant/20 font-bold text-xs rounded-lg">999</div>
+                    </div>
+                    <div className="mt-12 text-center">
+                        <button className="text-primary font-bold flex items-center gap-2 mx-auto hover:gap-3 transition-all">Ver todos los números <span className="material-symbols-outlined">chevron_right</span></button>
+                    </div>
+                </div>
+            </section>
+            {/*  <!-- Formulario de Reserva: Stationery Feel --> */}
+            <section className="py-24 px-8 bg-surface" id="reservar">
+                <div className="max-w-4xl mx-auto">
+                    <div className="bg-surface-container-lowest p-12 rounded-xl shadow-xl shadow-primary/5 relative">
+                        <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-on-primary px-8 py-3 rounded-full font-bold uppercase tracking-[0.2em] text-sm">Formulario de Reserva</div>
+                        <div className="text-center mb-12 space-y-4">
+                            <h2 className="serif-display text-4xl font-bold text-primary">Solicitá tu número</h2>
+                            <p className="text-on-surface-variant">Completá tus datos y un referente se pondrá en contacto para coordinar el pago.</p>
+                        </div>
+                        <form className="space-y-8">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div className="space-y-2">
+                                    <label className="text-sm font-bold text-on-surface-variant ml-1 uppercase tracking-wider">Nombre</label>
+                                    <input className="w-full bg-surface-container-highest border-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest rounded-xl py-4 px-6 text-on-surface transition-all outline-none" placeholder="Ej: Juan" type="text" />
                                 </div>
-                                <div className="flex items-center gap-4">
-                                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10">
-                                        <span className="material-symbols-outlined text-primary">phone_in_talk</span>
-                                    </div>
-                                    <div>
-                                        <p className="text-xs text-slate-400">Atención al Cliente</p>
-                                        <p className="font-semibold">0800-444-COVI (2684)</p>
-                                    </div>
+                                <div className="space-y-2">
+                                    <label className="text-sm font-bold text-on-surface-variant ml-1 uppercase tracking-wider">Apellido</label>
+                                    <input className="w-full bg-surface-container-highest border-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest rounded-xl py-4 px-6 text-on-surface transition-all outline-none" placeholder="Ej: Pérez" type="text" />
                                 </div>
-                                <button className="w-full rounded-2xl bg-white/10 py-4 text-center text-sm font-bold hover:bg-white/20 transition-colors">
-                                    Ver Bases y Condiciones Completas
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div className="space-y-2">
+                                    <label className="text-sm font-bold text-on-surface-variant ml-1 uppercase tracking-wider">Teléfono de Contacto</label>
+                                    <input className="w-full bg-surface-container-highest border-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest rounded-xl py-4 px-6 text-on-surface transition-all outline-none" placeholder="+598 000 000" type="tel" />
+                                </div>
+                                <div className="space-y-2">
+                                    <label className="text-sm font-bold text-on-surface-variant ml-1 uppercase tracking-wider">Número Solicitado</label>
+                                    <input className="w-full bg-surface-container-highest border-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest rounded-xl py-4 px-6 text-on-surface font-bold text-primary transition-all outline-none" placeholder="000" type="number" />
+                                </div>
+                            </div>
+                            <div className="space-y-2">
+                                <label className="text-sm font-bold text-on-surface-variant ml-1 uppercase tracking-wider">Referente Preferido</label>
+                                <select className="w-full bg-surface-container-highest border-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest rounded-xl py-4 px-6 text-on-surface transition-all outline-none appearance-none">
+                                    <option value="">Sin preferencia</option>
+                                    <option value="carlos">Carlos Benítez (Sector A)</option>
+                                    <option value="mariana">Mariana Solís (Sector B)</option>
+                                    <option value="roberto">Roberto Gómez (Sector C)</option>
+                                </select>
+                            </div>
+                            <div className="pt-6">
+                                <button className="w-full bg-primary text-on-primary py-5 rounded-xl text-xl font-bold hover:bg-primary-container shadow-lg transition-all flex items-center justify-center gap-3" type="submit">
+                                    Enviar Solicitud de Reserva <span className="material-symbols-outlined">send</span>
                                 </button>
                             </div>
-                        </div>
-                    </section>
-                </main>
-                {/* <!-- Simple Footer --> */}
-                <footer className="border-t border-primary/10 bg-white py-12 dark:bg-slate-900">
-                    <div className="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-6 px-6 md:flex-row">
-                        <div className="flex items-center gap-3">
-                            <div className="size-4 text-primary">
-                                <svg fill="currentColor"  xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z"></path>
-                                </svg>
-                            </div>
-                            <h2 className="text-lg font-bold">Covi El Jilguero</h2>
-                        </div>
-                        <p className="text-sm text-slate-500">© 2024 Covi El Jilguero. Todos los derechos reservados.</p>
-                        <div className="flex gap-6">
-                            <a className="text-slate-400 hover:text-primary" href="#"><span className="material-symbols-outlined">public</span></a>
-                            <a className="text-slate-400 hover:text-primary" href="#"><span className="material-symbols-outlined">share</span></a>
-                            <a className="text-slate-400 hover:text-primary" href="#"><span className="material-symbols-outlined">mail</span></a>
-                        </div>
+                        </form>
                     </div>
-                </footer>
-            </div>
-        </div>
-
+                </div>
+            </section>
+        </main>
     )
 }
